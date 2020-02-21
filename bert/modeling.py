@@ -569,6 +569,7 @@ class BertPreTrainedModel(nn.Module):
         # redirect to the cache, if necessary
         try:
             resolved_archive_file = cached_path(archive_file, cache_dir=cache_dir)
+            resolved_archive_file = '/newvolume/home/ubuntu'
         except EnvironmentError:
             logger.error(
                 "Model name '{}' was not found in model name list ({}). "
